@@ -1,0 +1,32 @@
+{
+  "name": "rawr-base",
+  "version": "0.1.0",
+  "description": "Frontend and Backend Node/React Web App",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "cd chintu && yarn start",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd chintu && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rawrcollective/rawr-base.git"
+  },
+  "author": "Rupa Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rawrcollective/rawr-base/issues"
+  },
+  "homepage": "https://github.com/rawrcollective/rawr-base#readme",
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.4",
+    "yarn": "^1.9.4"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.8"
+  }
+}
