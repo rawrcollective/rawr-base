@@ -31,8 +31,8 @@ const styles = theme => ({
       borderBottom: '1px solid rgba(57, 63, 68, 0.85)'
   },
   bigAvatar: {
-    width: 180,
-    height: 180,
+    width: window.innerWidth/4,
+    height: window.innerWidth/4.2,
   },
   avatar: {
     margin: 10,
