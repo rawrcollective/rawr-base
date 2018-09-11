@@ -17,7 +17,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 
 const styles = theme => ({
   root: {
@@ -47,6 +46,9 @@ function FullSite (props) {
           <Typography variant="title" color="inherit">
             aryawellness@greenlotus.center (877)862-0303
           </Typography>
+          <IconButton className={classes.button} aria-label="Delete">
+          {/* Add custom SVGIcon here */}
+        </IconButton>
         </Toolbar>
       </AppBar>
       <Grid container spacing={0}>
