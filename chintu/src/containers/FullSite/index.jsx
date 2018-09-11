@@ -7,14 +7,9 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActions from '@material-ui/core/CardActions';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
 import AppBar from '@material-ui/core/AppBar';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
+import Icon from '@material-ui/core/Icon';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 
@@ -26,6 +21,14 @@ const styles = theme => ({
     padding: theme.spacing.unit * 2,
     textAlign: 'center',
     color: theme.palette.text.secondary,
+    boxShadow: 'none'
+  },
+  card: {
+    boxShadow: 'none'
+  },
+  appBar: {
+      backgroundColor: '#FFFFFF',
+      borderBottom: '1px solid rgba(57, 63, 68, 0.85)'
   },
   bigAvatar: {
     width: 180,
@@ -34,6 +37,21 @@ const styles = theme => ({
   avatar: {
     margin: 10,
   },
+  navButton: {
+      float: 'right',
+  },
+  leftAppBar: {
+    marginLeft: '0',
+    marginRight: 'auto'
+},
+centerAppBar: {
+    marginRight: 'auto',
+    marginLeft: 'auto'
+},
+  rightAppBar: {
+      marginRight: '0',
+      marginLeft: 'auto'
+  }
 });
 
 function FullSite (props) {
@@ -41,14 +59,34 @@ function FullSite (props) {
 
   return (
     <div className={classes.root}>
-    <AppBar position="static" color="default">
+    <AppBar className={classes.appBar} position="static" color="default">
         <Toolbar>
-          <Typography variant="title" color="inherit">
-            aryawellness@greenlotus.center (877)862-0303
+          <div className={classes.leftAppBar}><Typography variant="title" color="inherit">
+            aryawellness@greenlotus.center
           </Typography>
-          <IconButton className={classes.button} aria-label="Delete">
-          {/* Add custom SVGIcon here */}
-        </IconButton>
+          </div>
+          <div className={classes.leftAppBar}>
+            <Typography variant="title" color="inherit">
+                (877)862-0303
+            </Typography>
+          </div>
+          <div className={classes.rightAppBar}>
+                <IconButton className={classes.navButton} aria-label="Facebook">
+                    <Icon className={classNames(classes.icon, 'fab fa-facebook-f')} />
+                </IconButton>
+                <IconButton className={classes.navButton} aria-label="Twitter">
+                    <Icon className={classNames(classes.icon, 'fab fa-twitter')} />
+                </IconButton>
+                <IconButton className={classes.navButton} aria-label="Yelp">
+                    <Icon className={classNames(classes.icon, 'fab fa-yelp')} />
+                </IconButton>
+                <IconButton className={classes.navButton} aria-label="Link">
+                    <Icon className={classNames(classes.icon, 'fas fa-link')} />
+                </IconButton>
+                <IconButton className={classes.navButton} aria-label="Cart">
+                    <Icon className={classNames(classes.icon, 'fas fa-shopping-cart')} />
+                </IconButton>
+          </div>
         </Toolbar>
       </AppBar>
       <Grid container spacing={0}>
