@@ -61,9 +61,10 @@ function FullSite (props) {
     <div className={classes.root}>
     <AppBar className={classes.appBar} position="static" color="default">
         <Toolbar>
-          <div className={classes.leftAppBar}><Typography variant="title" color="inherit">
-            aryawellness@greenlotus.center
-          </Typography>
+          <div className={classes.leftAppBar}>
+            <Typography variant="title" color="inherit">
+                aryawellness@greenlotus.center
+            </Typography>
           </div>
           <div className={classes.leftAppBar}>
             <Typography variant="title" color="inherit">
