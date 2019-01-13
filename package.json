@@ -1,0 +1,19 @@
+{
+  "name": "rawr-base",
+  "version": "1.0.0",
+  "description": "Node Static Page Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rawrcollective/rawr-base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rawrcollective/rawr-base/issues"
+  },
+  "homepage": "https://github.com/rawrcollective/rawr-base#readme"
+}
