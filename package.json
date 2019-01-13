@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Node Static Page Generator",
   "main": "index.js",
+  "engines": {
+    "node": ">10.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,18 @@
   "bugs": {
     "url": "https://github.com/rawrcollective/rawr-base/issues"
   },
-  "homepage": "https://github.com/rawrcollective/rawr-base#readme"
+  "homepage": "https://github.com/rawrcollective/rawr-base#readme",
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
 }
